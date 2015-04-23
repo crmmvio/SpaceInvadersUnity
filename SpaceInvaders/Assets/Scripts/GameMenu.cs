@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class GameMenu : MonoBehaviour {
+public class GameMenu : MonoBehaviour
+{
+    
+    public void NextScene(string sceneName)
+    {
+        Application.LoadLevel(sceneName);
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
