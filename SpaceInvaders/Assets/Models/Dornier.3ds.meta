@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 8c965b8d90c48194e887fa8d9391825b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: DORNIER
+    100002: //RootNode
+    100004: GLASS1
+    100006: GLASS10
+    100008: GLASS11
+    100010: GLASS12
+    100012: GLASS13
+    100014: GLASS14
+    100016: GLASS2
+    100018: GLASS3
+    100020: GLASS4
+    100022: GLASS5
+    100024: GLASS6
+    100026: GLASS7
+    100028: GLASS8
+    100030: GLASS9
+    400000: DORNIER
+    400002: //RootNode
+    400004: GLASS1
+    400006: GLASS10
+    400008: GLASS11
+    400010: GLASS12
+    400012: GLASS13
+    400014: GLASS14
+    400016: GLASS2
+    400018: GLASS3
+    400020: GLASS4
+    400022: GLASS5
+    400024: GLASS6
+    400026: GLASS7
+    400028: GLASS8
+    400030: GLASS9
+    2300000: DORNIER
+    2300002: GLASS1
+    2300004: GLASS10
+    2300006: GLASS11
+    2300008: GLASS12
+    2300010: GLASS13
+    2300012: GLASS14
+    2300014: GLASS2
+    2300016: GLASS3
+    2300018: GLASS4
+    2300020: GLASS5
+    2300022: GLASS6
+    2300024: GLASS7
+    2300026: GLASS8
+    2300028: GLASS9
+    3300000: DORNIER
+    3300002: GLASS1
+    3300004: GLASS10
+    3300006: GLASS11
+    3300008: GLASS12
+    3300010: GLASS13
+    3300012: GLASS14
+    3300014: GLASS2
+    3300016: GLASS3
+    3300018: GLASS4
+    3300020: GLASS5
+    3300022: GLASS6
+    3300024: GLASS7
+    3300026: GLASS8
+    3300028: GLASS9
+    4300000: GLASS14
+    4300002: GLASS1
+    4300004: GLASS2
+    4300006: GLASS3
+    4300008: GLASS4
+    4300010: GLASS5
+    4300012: GLASS6
+    4300014: GLASS7
+    4300016: GLASS8
+    4300018: GLASS10
+    4300020: GLASS11
+    4300022: GLASS9
+    4300024: GLASS12
+    4300026: GLASS13
+    4300028: DORNIER
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
