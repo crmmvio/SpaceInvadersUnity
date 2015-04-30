@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{3A8A7279-CA1E-D47B-26C0-5FE5026F3382}") = "SpaceInvaders", "Assembly-CSharp.csproj", "{435C8792-8CED-684F-1777-1C6A741F16E3}"
 EndProject
+Project("{3A8A7279-CA1E-D47B-26C0-5FE5026F3382}") = "SpaceInvaders", "Assembly-UnityScript-firstpass.unityproj", "{42415413-FC46-1F93-1686-9A55FF57CC29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{435C8792-8CED-684F-1777-1C6A741F16E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{435C8792-8CED-684F-1777-1C6A741F16E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{435C8792-8CED-684F-1777-1C6A741F16E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42415413-FC46-1F93-1686-9A55FF57CC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42415413-FC46-1F93-1686-9A55FF57CC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42415413-FC46-1F93-1686-9A55FF57CC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42415413-FC46-1F93-1686-9A55FF57CC29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-			GlobalSection(MonoDevelopProperties) = preSolution
+					GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
