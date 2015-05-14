@@ -4,17 +4,21 @@ using System.Collections;
 public class Shoot : MonoBehaviour {
 	
 	public GameObject bullet;
+    public Transform[] weapons;
+    public float timeToShot = 0.2f;
+    private float lastShot;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetKeyDown(KeyCode.Z))
-		{
-			Instantiate(bullet,transform.position,transform.rotation);
-		}
+	void Update () 
+    {
+        if (Input.GetKey(KeyCode.Space) && (Time.time - lastShot) > timeToShot)
+        {
+            foreach (Transform weapon in weapons)
+            {
+                Instantiate(bullet, weapon.position, weapon.rotation);
+            }
+
+            lastShot = Time.time;
+        }
+            
 	}
 }
