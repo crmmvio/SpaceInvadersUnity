@@ -7,11 +7,15 @@ public class Nave : MonoBehaviour
 	public float posicaoInicialY = 1.0f;
 	public int speed = 20;
 	public Transform limitObject;
+	
+	private Vector3 min;
+	private Vector3 max;
 
-	private float limiteEsq;
-	private float limiteDir;
-	private float limiteCima;
-	private float limiteBaixo;
+	void Start()
+	{
+		min = Camera.main.ViewportToWorldPoint(new Vector3(0,0,65));
+		max = Camera.main.ViewportToWorldPoint(new Vector3(1,1,65));
+	}
 
 	void Awake()
 	{
@@ -27,10 +31,10 @@ public class Nave : MonoBehaviour
 		nave.localPosition = posicaoInicial;
 
 		// Calcula as "fronteiras" do jogo
-		this.limiteEsq = this.limitObject.localScale.x / -2 + nave.localScale.x / 2;
-		this.limiteDir = -this.limiteEsq;
-		this.limiteCima = this.limitObject.localScale.y - nave.localScale.y / 2;
-		this.limiteBaixo = nave.localScale.y / 2;
+		//this.limiteEsq = this.limitObject.localScale.x / -2 + nave.localScale.x / 2;
+		//this.limiteDir = -this.limiteEsq;
+		//this.limiteCima = this.limitObject.localScale.y - nave.localScale.y / 2;
+		//this.limiteBaixo = nave.localScale.y / 2;
 		//Debug.Log (this.limiteCima);
 	}
 
@@ -39,17 +43,21 @@ public class Nave : MonoBehaviour
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
 			Vector3 novaPosicao = transform.position + (Vector3.left * speed * Time.deltaTime);
-			transform.position = (novaPosicao.x < this.limiteEsq)
-				? new Vector3(this.limiteEsq, novaPosicao.y, novaPosicao.z)
-				: novaPosicao;
+			if (novaPosicao.x > min.x)
+				transform.position = novaPosicao;
+			else
+				transform.position = new Vector3(max.x, novaPosicao.y, novaPosicao.z);
 		}
+
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
 			Vector3 novaPosicao = transform.position + (Vector3.right * speed * Time.deltaTime);
-			transform.position = (novaPosicao.x > this.limiteDir)
-				? new Vector3(this.limiteDir, novaPosicao.y, novaPosicao.z)
-				: novaPosicao;
+			if (novaPosicao.x < max.x)
+				transform.position = novaPosicao;
+			else
+				transform.position = new Vector3(min.x, novaPosicao.y, novaPosicao.z);
 		}
+		/*
 		if (Input.GetKey(KeyCode.UpArrow))
 		{
 			Vector3 novaPosicao = transform.position + (Vector3.up * speed * Time.deltaTime);
@@ -64,5 +72,6 @@ public class Nave : MonoBehaviour
 				? new Vector3(novaPosicao.x, this.limiteBaixo, novaPosicao.z)
 				: novaPosicao;
 		}
+		*/
 	}
 }
