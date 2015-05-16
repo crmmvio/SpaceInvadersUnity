@@ -10,6 +10,8 @@ public class Nave : MonoBehaviour
 	
 	private Vector3 min;
 	private Vector3 max;
+	private float limiteCima;
+	private float limiteBaixo;
 
 	void Start()
 	{
@@ -31,11 +33,8 @@ public class Nave : MonoBehaviour
 		nave.localPosition = posicaoInicial;
 
 		// Calcula as "fronteiras" do jogo
-		//this.limiteEsq = this.limitObject.localScale.x / -2 + nave.localScale.x / 2;
-		//this.limiteDir = -this.limiteEsq;
-		//this.limiteCima = this.limitObject.localScale.y - nave.localScale.y / 2;
-		//this.limiteBaixo = nave.localScale.y / 2;
-		//Debug.Log (this.limiteCima);
+		this.limiteCima = this.limitObject.localScale.y - nave.localScale.y / 2;
+		this.limiteBaixo = nave.localScale.y / 2;
 	}
 
 	void Update ()
@@ -57,7 +56,7 @@ public class Nave : MonoBehaviour
 			else
 				transform.position = new Vector3(min.x, novaPosicao.y, novaPosicao.z);
 		}
-		/*
+
 		if (Input.GetKey(KeyCode.UpArrow))
 		{
 			Vector3 novaPosicao = transform.position + (Vector3.up * speed * Time.deltaTime);
@@ -72,6 +71,5 @@ public class Nave : MonoBehaviour
 				? new Vector3(novaPosicao.x, this.limiteBaixo, novaPosicao.z)
 				: novaPosicao;
 		}
-		*/
 	}
 }
