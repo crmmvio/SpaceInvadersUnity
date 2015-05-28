@@ -33,7 +33,7 @@ public class Nave : MonoBehaviour
 		nave.localPosition = posicaoInicial;
 
 		// Calcula as "fronteiras" do jogo
-		this.limiteCima = this.limitObject.localScale.y - nave.localScale.y / 2;
+		this.limiteCima = this.limitObject.localScale.y - nave.localScale.y / 2 - 140;
 		this.limiteBaixo = nave.localScale.y / 2;
 	}
 
