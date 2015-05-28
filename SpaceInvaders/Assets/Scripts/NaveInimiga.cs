@@ -10,8 +10,15 @@ public class NaveInimiga : MonoBehaviour
 	{
 		if(col.gameObject.tag == "Bullet")
 		{
-			Instantiate(explosao, transform.position, Quaternion.identity);
-			Destroy(col.gameObject);
+            for (int i = 0; i < 5; i++)
+            {
+                Vector3 position = transform.position;
+                position.x += Random.Range(-7.0f, 7.0f);
+                position.y += Random.Range(-7.0f, 7.0f);
+                Instantiate(explosao, position, Quaternion.identity);
+
+            }
+            Destroy(col.gameObject);
 			Destroy(gameObject, delayExplosao);
 		}
 	}

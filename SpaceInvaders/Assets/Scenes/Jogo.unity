@@ -2548,7 +2548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosao: {fileID: 19800002, guid: 748eb41b584bb49b99a42da7420e5d1e, type: 2}
-  delayExplosao: .5
+  delayExplosao: .300000012
 --- !u!1 &724353966
 GameObject:
   m_ObjectHideFlags: 0
