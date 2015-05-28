@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Fundo.cs" />
      <Compile Include="Assets\Scripts\GameMenu.cs" />
      <Compile Include="Assets\Scripts\Nave.cs" />
+     <Compile Include="Assets\Scripts\NaveInimiga.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
