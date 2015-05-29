@@ -7,7 +7,9 @@ public class Nave : MonoBehaviour
 	public float posicaoInicialY = 1.0f;
 	public int speed = 20;
 	public Transform limitObject;
-	
+    public GameObject explosao;
+    public float delayExplosao = 2.5f;
+
 	private Vector3 min;
 	private Vector3 max;
 	private float limiteCima;
@@ -72,4 +74,23 @@ public class Nave : MonoBehaviour
 				: novaPosicao;
 		}
 	}
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Bullet" || col.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Explodiu nave Player");
+
+            for (int i = 0; i < 5; i++)
+            {
+                Vector3 position = transform.position;
+                position.x += Random.Range(-7.0f, 7.0f);
+                position.y += Random.Range(-7.0f, 7.0f);
+                Instantiate(explosao, position, Quaternion.identity);
+
+            }
+            Destroy(col.gameObject);
+            Destroy(gameObject, delayExplosao);
+        }
+    }
 }

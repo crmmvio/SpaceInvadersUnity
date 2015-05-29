@@ -6030,7 +6030,7 @@ GameObject:
   - 65: {fileID: 1976211399}
   m_Layer: 9
   m_Name: Nave
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6114,6 +6114,8 @@ MonoBehaviour:
   posicaoInicialY: 1
   speed: 40
   limitObject: {fileID: 575321794}
+  explosao: {fileID: 100002, guid: 748eb41b584bb49b99a42da7420e5d1e, type: 2}
+  delayExplosao: 2.5
 --- !u!54 &1976211398
 Rigidbody:
   m_ObjectHideFlags: 0
