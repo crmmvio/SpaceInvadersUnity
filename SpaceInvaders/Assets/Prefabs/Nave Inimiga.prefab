@@ -1297,7 +1297,7 @@ Rigidbody:
   m_Mass: .0500000007
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 76
@@ -1340,7 +1340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98db9d9d4bd95ac4ebf94c208a95955f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosao: {fileID: 0}
+  explosao: {fileID: 100002, guid: 748eb41b584bb49b99a42da7420e5d1e, type: 2}
   delayExplosao: .5
 --- !u!198 &19839850
 ParticleSystem:

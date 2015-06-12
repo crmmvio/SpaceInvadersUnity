@@ -66,6 +66,7 @@ public class Nave : MonoBehaviour
 				? new Vector3(novaPosicao.x, this.limiteCima, novaPosicao.z)
 				: novaPosicao;
 		}
+
 		if (Input.GetKey(KeyCode.DownArrow))
 		{
 			Vector3 novaPosicao = transform.position + (Vector3.down * speed * Time.deltaTime);
@@ -77,7 +78,7 @@ public class Nave : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Bullet" || col.gameObject.tag == "Enemy")
+        if (col.gameObject.tag == "Bullet" || col.gameObject.tag == "Enemy" )
         {
             Debug.Log("Explodiu nave Player");
 

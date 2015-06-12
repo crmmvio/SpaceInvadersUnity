@@ -6,10 +6,10 @@ public class NaveInimiga : MonoBehaviour
 	public GameObject explosao;
 	public float delayExplosao = 2.5f;
 
-	void OnCollisionEnter (Collision col)
-	{
-		if(col.gameObject.tag == "Bullet" || col.gameObject.tag == "Player")
-		{
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Bullet" || col.gameObject.tag == "Player")
+        {
             for (int i = 0; i < 5; i++)
             {
                 Vector3 position = transform.position;
@@ -19,7 +19,7 @@ public class NaveInimiga : MonoBehaviour
 
             }
             Destroy(col.gameObject);
-			Destroy(gameObject, delayExplosao);
-		}
-	}
+            Destroy(gameObject, delayExplosao);
+        }
+    }
 }
