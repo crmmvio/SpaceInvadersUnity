@@ -8,7 +8,7 @@ public class NaveInimiga : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Bullet" || col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Bullet" || col.gameObject.tag == "Player" || col.gameObject.tag == "Enemy")
         {
             for (int i = 0; i < 5; i++)
             {
