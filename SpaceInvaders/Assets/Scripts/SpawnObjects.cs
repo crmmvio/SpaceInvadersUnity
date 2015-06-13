@@ -13,8 +13,7 @@ public class SpawnObjects : MonoBehaviour
 
     // Use this for initialization
     void Start()
-    {
-        //VectCamera.main.ViewportToWorldPoint(new Vector3(0, 0, 65));
+    {        
         for (int i = 0; i < numberOfEnemiesX; i++)
         {
             for (int j = 0; j < numberOfEnemiesY; j++)
@@ -35,23 +34,24 @@ public class SpawnObjects : MonoBehaviour
         if (transform.childCount == 0)
         {
             GameManager.speed += speedIncreasePerLevel;
+            Debug.Log("Testando...");
             Start();
         }
     }
 
-    void OnDrawGizmos()
-    {
-        for (int i = 0; i < numberOfEnemiesX; i++)
-        {
-            for (int j = 0; j < numberOfEnemiesY; j++)
-            {
-                Vector3 spawnPosition = transform.position;
-                spawnPosition.x += i * (spawnAreaWidth / numberOfEnemiesX);
-                spawnPosition.y += j * (spawnAreaHeight / numberOfEnemiesY);
-                Gizmos.DrawLine(spawnPosition + Vector3.left, spawnPosition + Vector3.right);
-                Gizmos.DrawLine(spawnPosition + Vector3.up, spawnPosition + Vector3.down);
-                Gizmos.DrawLine(spawnPosition + Vector3.forward, spawnPosition + Vector3.back);
-            }
-        }
-    }
+    //void OnDrawGizmos()
+    //{
+    //    for (int i = 0; i < numberOfEnemiesX; i++)
+    //    {
+    //        for (int j = 0; j < numberOfEnemiesY; j++)
+    //        {
+    //            Vector3 spawnPosition = transform.position;
+    //            spawnPosition.x += i * (spawnAreaWidth / numberOfEnemiesX);
+    //            spawnPosition.y += j * (spawnAreaHeight / numberOfEnemiesY);
+    //            Gizmos.DrawLine(spawnPosition + Vector3.left, spawnPosition + Vector3.right);
+    //            Gizmos.DrawLine(spawnPosition + Vector3.up, spawnPosition + Vector3.down);
+    //            Gizmos.DrawLine(spawnPosition + Vector3.forward, spawnPosition + Vector3.back);
+    //        }
+    //    }
+    //}
 }

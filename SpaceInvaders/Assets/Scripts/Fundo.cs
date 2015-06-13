@@ -8,12 +8,9 @@ public class Fundo : MonoBehaviour
 	public string textureName = "_MainTex";
 	Vector2 uvOffset = Vector2.zero;
 
-	void LateUpdate() 
+	void Update() 
 	{
 		uvOffset += (uvAnimationRate * Time.deltaTime);
-		if(renderer.enabled)
-		{
-			renderer.materials[materialIndex].SetTextureOffset(textureName, uvOffset);
-		}
+		renderer.materials[materialIndex].SetTextureOffset(textureName, uvOffset);
 	}
 }

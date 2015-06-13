@@ -13,9 +13,7 @@ public class Shoot : MonoBehaviour {
         if (Input.GetKey(KeyCode.Space) && (Time.time - lastShot) > timeToShot)
         {
             foreach (Transform weapon in weapons)
-            {
                 Instantiate(bullet, weapon.position, weapon.rotation);
-            }
 
             lastShot = Time.time;
         }

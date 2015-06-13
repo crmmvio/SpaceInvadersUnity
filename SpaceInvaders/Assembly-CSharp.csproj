@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\BulletAI.cs" />
      <Compile Include="Assets\Scripts\ChangeScoreOnCollide.cs" />
      <Compile Include="Assets\Scripts\DestroyOnInvisible.cs" />
+     <Compile Include="Assets\Scripts\DieExplosion.cs" />
      <Compile Include="Assets\Scripts\Fundo.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameMenu.cs" />

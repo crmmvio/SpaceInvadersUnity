@@ -8,18 +8,16 @@ public class NaveInimiga : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Bullet" || col.gameObject.tag == "Player" || col.gameObject.tag == "Enemy")
+        Vector3 position;
+        for (int i = 0; i < 5; i++)
         {
-            for (int i = 0; i < 5; i++)
-            {
-                Vector3 position = transform.position;
-                position.x += Random.Range(-7.0f, 7.0f);
-                position.y += Random.Range(-7.0f, 7.0f);
-                Instantiate(explosao, position, Quaternion.identity);
+            position = transform.position;
+            position.x += Random.Range(-7.0f, 7.0f);
+            position.y += Random.Range(-7.0f, 7.0f);
+            Instantiate(explosao, position, Quaternion.identity);
 
-            }
-            Destroy(col.gameObject);
-            Destroy(gameObject, delayExplosao);
         }
+        Destroy(col.gameObject);
+        Destroy(gameObject, delayExplosao);
     }
 }

@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         {
             highScore = score;
         }
+
         if (gameOver)
         {
             if (Input.GetKeyDown(KeyCode.Z))
