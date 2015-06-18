@@ -85,7 +85,7 @@ GameObject:
   - 4: {fileID: 72887709}
   - 33: {fileID: 72887711}
   - 23: {fileID: 72887710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: propulsion_usemtl_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - 4: {fileID: 101394461}
   - 33: {fileID: 101394463}
   - 23: {fileID: 101394462}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh01_MeshPart1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,8 @@ GameObject:
   - 54: {fileID: 190824728}
   - 65: {fileID: 190824727}
   - 114: {fileID: 190824726}
-  m_Layer: 0
+  - 114: {fileID: 190824730}
+  m_Layer: 10
   m_Name: Nave Inimiga
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -283,6 +284,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &190824730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11408122, guid: 3c87717ee992f244c87661da618e8b6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1880553409}
+  m_GameObject: {fileID: 190824724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2459c5c06a7a38242acec6800136cd2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointValue: 100
 --- !u!1 &211309312
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +574,7 @@ GameObject:
   - 4: {fileID: 523480160}
   - 33: {fileID: 523480162}
   - 23: {fileID: 523480161}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cockpit2_usemtl_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +632,7 @@ GameObject:
   - 4: {fileID: 565629817}
   - 33: {fileID: 565629819}
   - 23: {fileID: 565629818}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: windshield_usemtl_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +756,7 @@ GameObject:
   - 4: {fileID: 580137322}
   - 33: {fileID: 580137324}
   - 23: {fileID: 580137323}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dash_usemtl_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +814,7 @@ GameObject:
   - 4: {fileID: 592967242}
   - 33: {fileID: 592967244}
   - 23: {fileID: 592967243}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cushion_usemtl_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,8 +1019,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1063,7 +1077,7 @@ RectTransform:
   m_GameObject: {fileID: 625249356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .800000012, y: .800000012, z: .5}
   m_Children: []
   m_Father: {fileID: 610396279}
   m_RootOrder: 1
@@ -1085,7 +1099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 37bb70b17ee0cf54a984b08016a3851b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06815a861076d384ebfbf27589fd2f7d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1109,7 +1123,7 @@ GameObject:
   - 4: {fileID: 638955692}
   - 33: {fileID: 638955694}
   - 23: {fileID: 638955693}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: red_mesh01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: d5fe9d02620caed439c731dccd907c81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5a84e0bc49ccb1a46957b73762cc8ee5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1401,7 +1415,7 @@ GameObject:
   - 4: {fileID: 1005308122}
   - 33: {fileID: 1005308124}
   - 23: {fileID: 1005308123}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dash_usemtl_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1459,7 +1473,7 @@ GameObject:
   - 4: {fileID: 1028623546}
   - 33: {fileID: 1028623548}
   - 23: {fileID: 1028623547}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door_usemtl_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1517,7 +1531,7 @@ GameObject:
   - 4: {fileID: 1090790517}
   - 33: {fileID: 1090790519}
   - 23: {fileID: 1090790518}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: green__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1732,7 +1746,7 @@ GameObject:
   - 4: {fileID: 1278250925}
   - 33: {fileID: 1278250927}
   - 23: {fileID: 1278250926}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cockpit2_usemtl_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1788,7 +1802,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1290206630}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1803,7 +1817,7 @@ Transform:
   m_GameObject: {fileID: 1290206629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .800000012, y: .800000012, z: .800000012}
   m_Children:
   - {fileID: 1787926393}
   - {fileID: 1278250925}
@@ -1912,7 +1926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 04213eb470858a144b52ad856d4756eb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b818e5cc39a9e0646a15f04f93981c36, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1936,7 +1950,8 @@ GameObject:
   - 4: {fileID: 1499788342}
   - 198: {fileID: 1499788344}
   - 199: {fileID: 1499788343}
-  m_Layer: 0
+  - 114: {fileID: 1499788345}
+  m_Layer: 10
   m_Name: Explosion01c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2002,7 +2017,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 0
   InitialModule:
     enabled: 1
@@ -3012,6 +3027,18 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!114 &1499788345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11442560, guid: 3c87717ee992f244c87661da618e8b6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1880553409}
+  m_GameObject: {fileID: 1499788341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac480811e011b043a3d44dbd9dd01c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1524899390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3022,7 +3049,7 @@ GameObject:
   - 4: {fileID: 1524899391}
   - 33: {fileID: 1524899393}
   - 23: {fileID: 1524899392}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: windshield_usemtl_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3163,7 +3190,7 @@ GameObject:
   - 4: {fileID: 1627924177}
   - 33: {fileID: 1627924179}
   - 23: {fileID: 1627924178}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lights.2_mesh01_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3221,7 +3248,7 @@ GameObject:
   - 4: {fileID: 1653886178}
   - 33: {fileID: 1653886180}
   - 23: {fileID: 1653886179}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh01_MeshPart0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3277,7 +3304,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1722155981}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mesh01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3308,7 +3335,7 @@ GameObject:
   - 4: {fileID: 1787926393}
   - 33: {fileID: 1787926395}
   - 23: {fileID: 1787926394}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cockpit2_usemtl_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3366,7 +3393,7 @@ GameObject:
   - 4: {fileID: 1832553145}
   - 33: {fileID: 1832553147}
   - 23: {fileID: 1832553146}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cockpit2_usemtl_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3468,7 +3495,7 @@ GameObject:
   - 4: {fileID: 2002257469}
   - 33: {fileID: 2002257471}
   - 23: {fileID: 2002257470}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dash_usemtl_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3526,7 +3553,7 @@ GameObject:
   - 4: {fileID: 2027030951}
   - 33: {fileID: 2027030953}
   - 23: {fileID: 2027030952}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door_usemtl_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3584,7 +3611,7 @@ GameObject:
   - 4: {fileID: 2042979738}
   - 198: {fileID: 2042979737}
   - 199: {fileID: 2042979736}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3637,7 +3664,7 @@ ParticleSystem:
   randomSeed: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 0
   InitialModule:
     enabled: 1
@@ -4659,7 +4686,7 @@ GameObject:
   - 4: {fileID: 2055256437}
   - 33: {fileID: 2055256439}
   - 23: {fileID: 2055256438}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: couplers__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4717,7 +4744,7 @@ GameObject:
   - 4: {fileID: 2084790776}
   - 33: {fileID: 2084790778}
   - 23: {fileID: 2084790777}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dash_usemtl_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
