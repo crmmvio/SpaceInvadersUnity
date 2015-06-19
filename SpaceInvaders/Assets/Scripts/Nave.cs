@@ -88,6 +88,8 @@ public class Nave : MonoBehaviour
             Instantiate(explosao, position, Quaternion.identity);
         }
 
+        GameManager.gameOver = true;
+
         Destroy(col.gameObject);
         Destroy(gameObject, delayExplosao);
     }
